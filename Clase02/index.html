@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./Controles/css/estilos.css" rel="stylesheet">
+    <script src="./Controles/scripts/funciones.js"></script>
+    <title>Document</title>
+
+  <!--   <script>
+
+        function Saludar() {
+            alert("Hola Mundo");
+        }
+
+    </script>
+
+    <style>
+        label {
+            color: aqua;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <form action="./pagina2.html">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label form="=txtNombre">Nombre</label>
+                <input type="text" id="txtNombre" name="nombre" required title="Ingrese Nombre!!">
+            </div>
+            <div>
+                <label form="=txtClave">Contraseña</label>
+                <input type="password" id="txtClave" name="Clave" required placeholder="Ingrese Password!!!">
+            </div>
+            <div>
+                <label form="=txtEdad">Edad</label>
+                <input type="number" id="txtEdad" name="Edad" value="23" min="18" max="64" value="18">
+            </div> <!-- type="range" -->
+            <!-- <button>Enviar</button> -->
+            <input type="submit" value="Login">
+
+            <div>
+                <label form="=txtPais">Pais</label>
+                <select name="pais" id="cboPais" aria-placeholder="Paises del mundo">
+                    <!-- multiple -->
+                    <optgroup label="Paises de America">
+                        <option value="1">Argentina</option>
+                        <option value="2">Brasil</option>
+                        <option value="3">Uruguay</option>
+                        <option value="4">Chile</option>
+                    </optgroup>
+                    <optgroup label="Paises de Europa">
+                        <option value="5" selected>España</option>
+                        <option value="6">Italia</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Genero</legend>
+                <!-- Si comparten el mismo name pueden seleccionarse uno u otro -->
+                <input type="radio" name="sexo" id="rdoMascuiino"><label for="rdoMasculino">Masculino</label>
+                <input type="radio" name="sexo" id="rdoFemenino" checked><label for="rdoFemenino">Femenino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies</legend>
+                <!-- Si comparten el mismo name pueden seleccionarse uno u otro -->
+                <input type="checkbox" id="chkEsqui"><label for="chkEsqui">Esqui</label>
+                <input type="checkbox" id="chkMountainBike" checked><label for="chkMountainBike">Mountain Bike</label>
+                <input type="checkbox" id="chkKayak" checked><label for="chkKayak">Kayak</label>
+            </fieldset>
+
+            <div><label for="taComent">comentario</label><textarea name="" id="taComent" cols="50" rows="10"></textarea>
+            </div>
+
+            <div><input type="reset" id="btnreset"></div> <!-- reestablece el valor original de la pagina -->
+
+            <!-- <div><button onclick="Saludar()">Saludar</button></div> -->
+
+            <div><button id="btnSaludarJS">SaludarATodos</button></div>
+
+            <input type="hidden" name="txtTime">
+        </fieldset>
+    </form>
+</body>
+
+</html>
