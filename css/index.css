@@ -1,0 +1,37 @@
+/* selector por etiqueta */
+/* en JS usamos lo mismo document.getElementByTagName("p") */
+p{
+    color: red
+}
+
+/* selector por id, Ejemplo id="miParrafo" */
+/* en JS usamos lo mismo document.getElementById("miParrafo") */
+/* en JS usamos lo mismo querySelectorAll("miParrafo") */
+#miParrafo{
+    color: green;
+    margin-top: 30px;
+}
+
+/* selector por clase, Ejemplo class="miParrafo" */
+/* class se puede concatenar. Ej: class="azul grande subrayado" */
+/* en JS usamos lo mismo document.getElementByClassName("miParrafo") */
+.azul{
+color: rgba(100,100,100, .4) /*el cuarto parametro es la transparencia, va de 0 a 1*/
+}
+
+p .h1{
+    background: rgb(100,100,100)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/destacada.jpg");
+    background-repeat: no-repeat;
+    height: 2000px;
+    background-attachment: fixed;
+    background-position: center;
+}

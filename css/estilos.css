@@ -1,0 +1,51 @@
+.body{
+    line-height: 2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.site-header{
+    background-image: url("../img/header.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenido-header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site-header h1{
+    color: white;
+    max-width: 600px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.navegacion a:last-of-type{
+    margin: 0;
+}
+.navegacion a:hover{
+    color: green;
+}
+
+.contenedor{
+    /* max-height: 1200px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
