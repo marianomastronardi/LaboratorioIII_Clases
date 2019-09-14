@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./scripts/eventos.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Inmobiliaria</title>
+</head>
+
+<body> 
+    <form action="">
+        <fieldset>
+            <legend>Titulo de la Propiedad</legend>
+            <p><label for="txtTitulo">Titulo: </label><input type="text" id="txtTitulo" placeholder="Ingrese titulo">
+            </p>
+            <p><label for="txtDescripcion">Descripcion: </label><textarea type="text" id="txtDescripcion"
+                        placeholder="Ingrese Descripcion" cols="50" rows="5"></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend>Transaccion</legend>
+            <p><input type="radio" name="rdbMotivo" id="Permutacion" checked>Permutacion</p>
+            <p><input type="radio" name="rdbMotivo" id="Venta">Venta</p>
+            <p><input type="radio" name="rdbMotivo" id="Alquiler">Alquiler</p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la Propiedad</legend>
+            <p><label for="txtPrecio" >Precio</label><input type="text" id="txtPrecio" placeholder="Ingrese Precio"></p>
+            <p><label for="nDormitorio">Dormitorios</label><input type="number" id="nDormitorio" name="nDormitorio"
+                    value="0" min="0" max="5"></p>
+            <p><label for="nBaño" >Baños</label><input type="number" id="nBaño" name="nBaño" value="1" min="1" max="5">
+            </p>
+            <p><label for="nGarage" >Garages</label><input type="number" id="nGarage" name="nGarage" value="0" min="0"
+                    max="5"></p>
+        </fieldset>
+        <div>
+            <button id="btnSubmit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
